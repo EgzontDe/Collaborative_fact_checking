@@ -1,0 +1,144 @@
+/* Main content area */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f2f5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Container surrounding the form for aesthetics */
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 540px; /* You can adjust this as needed */
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+/* Style for the form header */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* General form styling */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Labels for form inputs */
+.form-container label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Style for text inputs and textareas */
+.form-container input[type="text"],
+.form-container input[type="url"],
+.form-container textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    font-size: 1rem;
+    max-width: 100%;
+    width: 100%; /* Ensure consistent width */
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Placeholder style */
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #c0c0c0;
+}
+
+/* Specific styles for file input to make it more consistent */
+.form-container input[type="file"] {
+    border: 1px solid #ccd0d5;
+    padding: 0.5rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+/* Adjusting the file input text to make it visually consistent */
+.form-container input[type="file"]::file-selector-button {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #e4e6eb;
+    border: 1px solid #ccd0d5;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.form-container input[type="file"]::file-selector-button:hover {
+    background-color: #d8dadf;
+}
+
+/* Style for submit button */
+.form-container button {
+    background-color: #4CAF50; /* Choose a color that fits your theme */
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Match width with other input fields */
+    box-sizing: border-box;
+}
+
+/* Hover effect for submit button */
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .form-container {
+        margin: 0;
+        width: calc(100% - 2rem); /* Full width minus padding */
+    }
+}
+
+/* Accessibility focus styles */
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container button:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* Add this class to the div wrapping your file input */
+.file-input-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 0.5rem; /* Add some space between the label and the button */
+}
+
+/* Additional styles to the file input for consistency */
+.form-container input[type="file"] {
+    /* Remove the styles if you want it to look more like a typical file input */
+}
+
+/* You can also style the text that shows the selected file name */
+.form-container .file-name {
+    /* Add styles here */
+}

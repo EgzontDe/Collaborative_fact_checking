@@ -1,0 +1,127 @@
+.info-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the block */
+    padding: 2rem;
+    background: white;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.info-block h1 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    color: #000; /* Black color for the heading */
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem; /* Adjust the size as needed */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.additional-info {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem; /* Spacing between buttons */
+    margin-bottom: 1rem;
+}
+
+.btn-discover, .btn-signup {
+    flex: 1; /* Buttons take up equal space */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-discover {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+}
+
+.btn-signup {
+    background-color: #008CBA; /* Blue button */
+    color: white;
+}
+
+.btn-discover:hover, .btn-signup:hover {
+    filter: brightness(90%);
+}
+
+.footnote {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        padding: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn-discover, .btn-signup {
+        width: 100%; /* Full-width buttons on smaller screens */
+        margin-bottom: 0.5rem;
+    }
+}
+/* InformationBlock.css */
+
+/* Existing styles */
+.info-block {
+    /* Existing styles */
+}
+
+/* New styles for leaderboard */
+.leaderboard-container {
+    margin-top: 2rem;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-rank {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.leaderboard-name {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.leaderboard-score {
+    font-weight: bold;
+}

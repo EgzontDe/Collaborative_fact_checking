@@ -1,0 +1,15 @@
+.content-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Or center, depending on your design */
+    padding: 20px;
+    margin-top: 20px; /* Space from the top, adjust as needed */
+    margin-bottom: 20px; /* Space from the bottom, adjust as needed */
+}
+
+.left-content, .right-content {
+    flex: 1; /* Each side takes up half the width of the divider */
+    padding: 10px; /* Padding inside each content area */
+}
+
+/* Add additional styling as needed */

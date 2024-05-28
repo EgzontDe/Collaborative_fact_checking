@@ -1,0 +1,105 @@
+/* LatestPosts.css */
+
+.latest-posts-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Allows columns to grow */
+    grid-gap: 20px;
+    max-width: 1200px; /* Adjust the width as necessary */
+    width: 100%; /* Ensures the container expands to its parent's width */
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solida #dddddd;
+    border-radius: 8px;
+    overflow: hidden; /* Ensure content doesn't overflow the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Center the post horizontally */
+    max-width: 100%; /* Allows post to fill the grid column */
+}
+
+
+.post h3 {
+    margin: 0;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333333;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.post p {
+    padding: 20px;
+    margin: 0;
+    color: #666666;
+}
+
+.post-details {
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #999999;
+    border-top: 1px solid #dddddd;
+}
+
+/* Additional CSS for feedback form styling */
+.feedback-form {
+    background-color: #f8f9fa; /* Light grey background for the form */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.feedback-form input[type="text"], .feedback-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.feedback-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* Responsive adjustments */
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .post-container {
+        grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .post-container {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+    .post {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}

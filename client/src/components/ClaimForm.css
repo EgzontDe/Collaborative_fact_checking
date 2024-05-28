@@ -1,0 +1,75 @@
+.rating-image {
+    display: block; /* Or inline-block, depending on your layout */
+    margin: 5px auto; /* Adjust margins as needed */
+    max-width: 300px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.claim-form {
+    max-width: 600px;
+    height: auto; /* Or set a specific min-height if you need */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.claim-form h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group textarea {
+    width: 560px; /* Fixed width for textarea */
+    min-height: 290px; /* Minimum height */
+    max-height: 600px; /* Maximum height, if you want to limit it */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #ccc;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.result {
+    color: green;
+    text-align: center;
+}
+/* Add to ClaimForm.css */
+.result.verified {
+    color: green;
+}
+
+.result.unverified {
+    color: red;
+}
+
+.error {
+    color: red;
+}
