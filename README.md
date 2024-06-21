@@ -33,8 +33,10 @@ The system allows users to view posts, submit feedback, and see a dynamically up
 
 ### Installation
 
+For Cloning the repository and contributing, clone the Master via the link below
+
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourgithubusername/fact-checking-using-fuzzy-logic.git
+   git clone https://github.com/EgzontDe/Collaborative_fact_checking/tree/master
    cd fact-checking-using-fuzzy-logic
